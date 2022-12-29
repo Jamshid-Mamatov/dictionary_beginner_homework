@@ -8,4 +8,8 @@ def get_user_names_with_age(data:list, age:int) -> list:
     Returns:
         list: A list of users with the given age
     """
-    return 
+    list_user=[]
+    for i  in data:
+        if i['age']==age:
+            list_user.append(i['name'])
+    return list_user
