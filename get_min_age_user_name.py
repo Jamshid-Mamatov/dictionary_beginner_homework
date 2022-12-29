@@ -8,7 +8,8 @@ def get_min_age_user_name(data:list) -> str:
         str: The name of the user with the minimum age in the dictionary
     """
     min=data[0]['age']
-    name=""
+    name=data[0]['name']
+    print(min,name)
     for i in data:
         if min>i['age']:
             name=i['name']
